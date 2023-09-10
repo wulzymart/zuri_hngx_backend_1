@@ -10,7 +10,7 @@ app.get("/api", (req, res) => {
     res.status(200).json({
   "slack_name": slack_name || "Olawole Olawale Martins",
   "current_day": daysOfWeek[now.getDay()],
-  "utc_time": now.toISOString(),
+  "utc_time": now.toISOString().split('.')[0] + 'Z',
   "track": track || "backend",
   "github_file_url": "https://github.com/wulzymart/zuri_hngx_backend_1/blob/main/server.js",
   "github_repo_url": "https://github.com/wulzymart/zuri_hngx_backend_1",
