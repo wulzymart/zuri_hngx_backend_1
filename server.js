@@ -12,7 +12,7 @@ app.get("/api", (req, res) => {
   "current_day": daysOfWeek[now.getDay()],
   "utc_time": now.toISOString(),
   "track": track || "backend",
-  "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
+  "github_file_url": "https://github.com/wulzymart/zuri_hngx_backend_1/blob/main/server.js",
   "github_repo_url": "https://github.com/wulzymart/zuri_hngx_backend_1",
   "status_code": 200
 })
